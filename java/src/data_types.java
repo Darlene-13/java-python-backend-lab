@@ -19,10 +19,24 @@ public class data_types {
 
         // Creating new arrays
         byte[] fileData = new byte[1000];
-        int[] numbers = new int[10]
+        int[] numArray = new int[10];
 
         // Working with arrays
         fileData[0] = 1;
-        numbers[0] = 10;
+        numArray[0] = 10;
+        System.out.println("First element in numArray: " + numArray[0]);
+ 
+        //Methods and functions in java
+        public static int countFrequency(byte[], data, byte, target){
+            int count = 0;
+            for (byte b: data) {
+                if (b== target) {
+                    count ++
+                }
+            }
+            return count;
+        }
+ 
     }
 }
+
