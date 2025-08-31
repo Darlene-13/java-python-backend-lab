@@ -1,4 +1,3 @@
-// This are some basic data types in java
 public class data_types {
     public static void main(String[] args){
 
@@ -27,16 +26,20 @@ public class data_types {
         System.out.println("First element in numArray: " + numArray[0]);
  
         //Methods and functions in java
-        public static int countFrequency(byte[], data, byte, target){
-            int count = 0;
-            for (byte b: data) {
-                if (b== target) {
-                    count ++
-                }
+        // Example usage:
+        // int freq = countFrequency(fileData, (byte)1);
+        // System.out.println("Frequency: " + freq);
+
+    }
+
+    public static int countFrequency(byte[] data, byte target){
+        int count = 0;
+        for (byte b: data) {
+            if (b == target) {
+                count++;
             }
-            return count;
         }
- 
+        return count;
     }
 }
 

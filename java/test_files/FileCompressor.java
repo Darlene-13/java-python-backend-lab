@@ -8,3 +8,4 @@ public class FileCompressor {
         System.out.println("Hello Project Compressor and Decompressor");
     }
 }
+
