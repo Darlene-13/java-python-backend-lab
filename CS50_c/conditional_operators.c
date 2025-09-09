@@ -18,3 +18,6 @@ int main (void) {
     }
     return 0;
 }
+
+
+// Quick snatch we do not have or in c we have || and && operators
