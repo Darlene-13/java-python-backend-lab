@@ -23,3 +23,23 @@ class ConditionalOperators {
         }
     }
 }
+
+// Quick snatch we do not have or in java we have || and && operators
+// Using a single character use single quotes for characters
+// Using double characters use double quotes for strings
+// == equal to
+// != not equal to
+// < less than
+// > greater than
+// <= less than or equal to
+// >= greater than or equal to
+// && logical and
+// || logical or
+// ! logical not
+// += addition assignment
+// -= subtraction assignment
+// *= multiplication assignment
+// /= division assignment
+// %= modulus assignment
+// ++ increment by 1
+// -- decrement by 1    
