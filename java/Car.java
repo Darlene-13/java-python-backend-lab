@@ -28,13 +28,3 @@ public class Car{
 }
 
     
-// Using the class (creating objects)
-public class CarTest {
-    public static void main(String[] args) {
-        Car myCar = new Car();
-        myCar.brand = "Toyota";
-        myCar.start();
-        myCar.accelerate();
-        myCar.brake();
-    }
-}
