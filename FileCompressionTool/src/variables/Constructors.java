@@ -43,3 +43,45 @@ class Constructor{
 // super() = "Start by building on the foundation from my parent class."
 
 //this() = "Start by using another constructor in this same class before continuing."
+
+//WHEN CONSTRUCTOR IS CALLED
+//Each time an object is created using new() keyword atleast one constructor is invoked to assign initial values to the data members of the same class.
+
+// Types of constructors in Java
+// 1. Default Constructor
+// 2. Parameterized Constructor
+// 3. Copy Constructor
+
+//1. Default Constructor
+// This is a type of constructor that has not parameters, it is invisible.
+// It can be implicit and explicit
+
+// example
+class Constructors{
+
+    Constructor() { // The brackets are empty, to mean it has no parameters
+        System.out.println("This is a robotic class constrcuctor")
+    }
+
+    public static void main(String[] args){
+
+        Comstructor c = new Constructor();
+    }
+}
+
+// Implicit is when you do not create any constructor and java does it for you
+
+public class Constructors{
+
+    // variables with no constructors
+    int id;
+    String name;
+
+}
+
+public class Main{
+    public static void main(String[] args){
+        Constructors c = new Constructors();
+
+    }
+}
