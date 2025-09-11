@@ -56,6 +56,14 @@ class Constructor{
 // This is a type of constructor that has not parameters, it is invisible.
 // It can be implicit and explicit
 
+/*
+* Implicit: Default constructor that is created when no constructor has been defined in a class
+* The compiler does not take any parameters and initialized the object with default values ie: 0 for numbers
+*
+* Explicit: This happens when the constructor is created but with no parameters.
+* It replaces the implicit constructor.
+*  */
+
 // example
 class Constructors{
 

@@ -17,5 +17,9 @@
 
 // Constructors:
 // Think of a constructor like the birth certificate for Think of a constructor like the birth certificate for an object in Java.
-When you create a new object, the constructor is what sets it up, giving it a name, size, or whatever it needs to start living.an object in Java.
+// When you create a new object, the constructor is what sets it up, giving it a name, size, or whatever it needs to start living.an object in Java.
 //When you create a new object, the constructor is what sets it up, giving it a name, size, or whatever it needs to start living.
+
+/* SIGNIFICANCE OF CONSTRUCTORS
+* Ensure that an object is well intiialized before use...without constructors objects might have undefined or default values and risks the state of the object.
+ */
