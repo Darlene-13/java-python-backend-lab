@@ -64,6 +64,18 @@ class Constructor{
 * It replaces the implicit constructor.
 *  */
 
+
+// 2. Parameterized Constructors in Java
+// This is a type of constructor that has paramaters unlike the default one with no parameters.
+// This one is used when we want to initialize fields with our own values.
+
+
+
+
+
+
+
+
 // example
 class Constructors{
 
