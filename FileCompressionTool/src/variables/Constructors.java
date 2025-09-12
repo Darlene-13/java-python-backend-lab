@@ -71,7 +71,9 @@ class Constructor{
 
 
 
-
+// 3. Copy Constructor in java
+// This is a type of constructor that is passed with another object which copies the available data from the passed object to the newly created object
+// It is not built in unline C so we create this.
 
 
 
