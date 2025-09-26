@@ -152,6 +152,119 @@ class BasicOperations {
         }
 
         //LOOPS AND ITERATIONS
+        System.out.println("Enter a number you want to find the sum of its precedence: ");
+        int num4 = sc.nextInt();
+        int sum = 0;
+        for (int i = 0; i <= num3 + 1 ; i++){
+            sum +=i;
+        }
+        System.out.println("The sum is: " + sum);
+
+        // Factorial while loop
+        System.out.println("Enter a number of your choice to find the factorial: ");
+        int num =  sc.nextInt();
+        int factorial = 1;
+        int k = 1;
+        while (k <= num){
+            factorial = factorial * k;
+            k = k + 1;
+        }
+        System.out.println("The factorial is: " + factorial);
+
+        // Multiplication table
+        System.out.println("Enter an integer of your choice to gets its multiplication table: ");
+        int num5 = sc.nextInt();
+
+        for (int j = 1; j<= num5; j++){
+            int result = num5 * j;
+            System.out.println( num5 + " x " + j + " = " + result);
+        }
+
+        // Power of a number
+        System.out.println("Enter your base number to get its power: ");
+        int num6 = sc.nextInt();
+        System.out.println("Enter the power number :");
+        int num7 = sc.nextInt();
+
+        int result2 = 1;
+
+        for ( int l = 1; l <= num7; l++){
+            result2 = result2 * num6;
+        }
+        System.out.println("The answer is: " + result2);
+
+        // ADVANCED FACTORIAL (FOR)
+        System.out.println("Enter a number you want to find its factorial: ");
+        int num8 = sc.nextInt();
+        if (num8 < 0 ){
+            System.out.println("Factorial not defined for negative numbers");
+            return;
+        }
+        int factorial2 = 1;
+
+        for (int m =1; m <= num8; m++){
+            factorial2 = factorial2 * m;
+        }
+        System.out.println("The factorial is: " + factorial2);
+
+        // Simple Calculator
+        System.out.println("Up for maths ? Let us perform some calculations ");
+        System.out.println("Enter your first number: ");
+        double num9 =  sc.nextDouble();
+        System.out.println("Enter your operator: it could be + , - , * , /");
+        char operator = sc.next().charAt(0);
+        System.out.println("Enter your second number: ");
+        double num10 =  sc.nextDouble();
+
+        double result4 = 0;
+        switch (operator){
+            case '+':
+                result4 = num9 + num10;
+                break;
+            case '-':
+                result4 = num9 - num10;
+                break;
+            case '*':
+                result4 = num9 * num10;
+                break;
+            case '/':
+                result4 = num9 / num10;
+                break;
+            default:
+                System.out.println("Invalid Operator");
+                return;
+        }
+
+        System.out.println("Do you want to enter a third number? Enter YES to enter and NO to proceed with the operations. ");
+        String output = sc.next().toUpperCase();
+        if (output.equals("YES")){
+            System.out.println("Enter your desired operators it could be + , -, * , /: ");
+            char operator2 = sc.next().charAt(0);
+
+            System.out.println("Enter your third number: ");
+            double num11 =  sc.nextDouble();
+            switch (operator2){
+                case '+':
+                    result4 = result4 + num11;
+                    break;
+                case '-':
+                    result4 = result4 - num11;
+                    break;
+                case '*':
+                    result4 = result4 * num11;
+                    break;
+                case '/':
+                    result4 = result4 / num11;
+                    break;
+                default:
+                    System.out.println("Invalid operator!");
+                return;
+            }
+        }
+
+        System.out.println("The result is : " + result4);
+
+
 
         sc.close();
     }
