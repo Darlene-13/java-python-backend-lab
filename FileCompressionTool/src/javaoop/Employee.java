@@ -195,3 +195,49 @@ public class Main {
 //2. Method overriding
 // This is also known as the runtime polymorphism and is the concept of polymorphism where the method in the child has the sanem name, return type and parameters as a parent class, the child class provides the implementation in the method that is already written.
 
+// PARENT CLASS
+class Parent{
+    // Overloaded method (compile time polymorphism)
+    public void func(){
+        System.out.println("Parent.func()");
+    }
+    //Overloaded method
+    public void func(int a){
+        System.out.println("Parent.func(int): " + a);
+    }
+}
+
+// CHILD CLASS
+class Child extends Parent{
+    // Overrides the parent func(int)
+    @Override
+    public void func(int a){
+        System.out.println("Child.func(int): " + a);
+    }
+
+}
+
+public class Main{
+    public static void main(String[] args) {
+        Parent par = new Parent();
+        Child child = new Child();
+        // Dynamic dispatch
+        Parent polymorphicObj = new Child();
+
+        // Method overloading
+        parent.func();
+        parent.func(10);
+
+        // Method overriding (run time)
+        child.func(20);
+        // Polymorphism
+        polymorphicObj.func(30);
+    }
+}
+
+
+// Advantages of OOP over POP proceedural orietented programming
+//1. Reusability
+//2. Clear logic
+// 3. DRY method
+// 4. Quiker implementation
