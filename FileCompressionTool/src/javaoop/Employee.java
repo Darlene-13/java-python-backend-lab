@@ -150,3 +150,48 @@ public class Main {
 // Inheritance is a pillar of OOP and it is basically the mechanism in java in which one class is allowed inherit features that is fields and methods of another class
 // This is achieved by the feature of the extends keyword. This type of relationship is also know as is-a relationship
 // Example the DOG, CAT, COW can now inherit some features from the ANIMAL CLASS
+
+// Super class: The class whose features are inherited is known as a super class or base or parent class
+// Subclass: This is the class that inherits another class it is also known as dereived or extended class or child class
+// Reusability: Inheritance supports the concept of reusability that is when we want to create a  new class amnd there is already a class that includes some of the code that we want we can dereive our new class from the existing class and this enables us to resuse the fields and methods of the existing class'
+
+// Super class animal
+
+class Animal{
+    void eat(){
+        System.out.println("Animal is eating.......");
+    }
+    void sleep(){
+        System.out.println("Animal is sleeping....")
+    }
+}
+
+// Subclass child that inherits from animal
+class Dog implements Animal{
+    void bark(){
+        System.out.println("Dog is barking.......");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog myDog = new Dog();
+
+        myDog.eat();
+        myDog.sleep();
+
+        // Child class methods
+        myDog.bark();
+    }
+}
+
+//6. Polymorphism
+// Polymorphism basically means having many forms and this means that one entity can take many forms.
+// In java polymorphism allows the same method or object to behave different based on the context, especially on the projects actual runtime class
+// Polymporphism is made up of compile-tine polymorphism withe method overloading and runtime polymorphism that has method overriding
+
+// 1. Method overloading
+// THis is also known as compile time polymorphism and basically this is the concept of polymorphism where more than one method tends to share the same name with different signatures of parameters. The return types can not be same though.
+//2. Method overriding
+// This is also known as the runtime polymorphism and is the concept of polymorphism where the method in the child has the sanem name, return type and parameters as a parent class, the child class provides the implementation in the method that is already written.
+
