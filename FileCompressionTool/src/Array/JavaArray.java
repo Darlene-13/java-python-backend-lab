@@ -154,3 +154,28 @@ class JavaArray4 {
         }
     }
 }
+
+// Passing back arrays to methods
+class JavaArray5{
+    public static void main(String[] args) {
+        int [] arr = m1();
+
+        for (int i = 0; i < arr.length; i++)
+            System.out.print(arr[i] + " ");
+        }
+    public static int [] m1(){
+        // returning the array
+        return new int [] {1,2,3};
+    }
+}
+
+
+// ADVANTAGES OF JAVA ARRAYS
+// Efficient access: Accessing an element by its index is fast and has a constant time complexity of O(1)
+// Memory management: Arrays have a fixed size, which makes memory management straightforward and predictable
+// Data Organization: Arrays help in organizing data in a structured manner thus making it easier to manage related elements
+
+// DISADVANTAGES OF JAVA ARRAYS
+// Fixed size: Once an array is created, the size can't be changed and this can lead to memoery waste if the size is over estimated or insufficient storage if underestimates
+// Type homogeinity: Arrays only store the elements of the same data type which may require a little bit additional handling for mixed types of data
+// Insertion and Deletion: Inserting or deleting elements especially in the middle of an array can be costly and may require shifting.
