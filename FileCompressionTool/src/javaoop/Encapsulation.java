@@ -11,21 +11,42 @@ public class Person{
         this.name=name;
     }
 
-    // Getter
-    public String getSocialid() {
-        return socialid;
-    }
-    // Setter method
-    public void setSocialid(String socialid) {
-        this.socialid = socialid;
-    }
     public String getName() {
         return name;
     }
-    public boolean ValidateSocialid(String socialid){
-        return this.socialid.equals(socialid);
+    public void setName(String name) {
+        this.name = name;
+    }
+    public boolean ValidateID(){
+        return socialID >= 0 && socialID <=1001;
     }
     public static void main(String[] args) {
+        person p1 = new Person ("Darlene", 1000);
+        if(!p1.validateID()){
+            System.out.println("Invalid Social ID");
+        }
+        System.out.println("Name: " + p1.getName())
     }
 
+}
+
+// IMPLEMENTATION OF ENCAPSULATTION IN JAVA
+
+
+
+class Programmer{
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+}
+
+public class Geeks {
+    public static void main(String[] args){
+        Programmer p = new Programmer();
+        p.setName("Darlene");
+        System.out.println("Name: " + p.getName())
+    }
 }
