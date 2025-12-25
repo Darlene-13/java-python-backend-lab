@@ -3,7 +3,7 @@
 # STEP 1: DEFINE THE CHOICES
 # We store the choices in a variable
 # The word "rock" and "paper" are strings and the words like player choice and computer choice are called variables.
-# Next we will create a function, a function is a program that runs when called and it is defined with the def keyword.
+# Next we will create a function, a function is a program that runs when called, and it is defined with the def keyword.
 # Function to create a choice
 # We could store the choices in a dictionary too
 def get_choice():
